@@ -1,0 +1,45 @@
+{
+  "name": "git-remote-create",
+  "version": "0.0.0-alpha",
+  "description": "create remote github repository, using node",
+   "homepage": "http://yashprit.github.io",
+    
+    "bugs": {
+      "url": "yashprit/git-remote-create/issues"
+  },
+  "author": {  "url": "yashprit.github.io"  ,  "name": "Yashprit"  ,  "email": "yashprit@gmail.com" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "yashprit/git-remote-create"
+  },
+  "license": "MIT",
+  "files": [ 
+        "index.js"   ,
+        "cli.js" 
+  ],
+  "keywords": [
+    "git-remote-create"  ,
+        "remote"  ,
+        "repo"  ,
+        "cli"  ,
+        "create"  ,
+        "github" 
+  ],
+  "dependencies": { 
+        "minimist": "^1.1.1" 
+  },
+  "devDependencies": { 
+        "mocha": "*" 
+       ,
+      "jshint-stylish": "^1.0.0" 
+  },
+  "scripts": { 
+      
+      
+       "test": "mocha" 
+  }  ,
+      "bin": {
+        "git-remote-create": "cli.js"
+    } 
+}
