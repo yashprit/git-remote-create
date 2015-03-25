@@ -1,5 +1,4 @@
-#  [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-url]][daviddm-image]
-
+# git-remote-create [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]
 > create remote github repository, using node
 
 
@@ -15,16 +14,16 @@ $ npm install --save git-remote-create
 ### JavaScript
 
 ```js
-var git-remote-create = require('git-remote-create');
-
-git-remote-create('Rainbow');
+var gitRemoteCreate = require('git-remote-create');
+gitRemoteCreate([token],[reponame], cb);
 ```
 
 ### Command Line reference
 
 ```sh
 $ npm install --global git-remote-create
-$ git-remote-create --help
+$ git-remote-create --t {token} --r "sample"
+# => this will create repo with name sample
 ```
 
 ## Run Test
@@ -45,5 +44,3 @@ MIT © [Yashprit](yashprit.github.io)
 [npm-image]: https://badge.fury.io/js/git-remote-create.svg
 [travis-url]: https://travis-ci.org/yashprit/git-remote-create
 [travis-image]: https://travis-ci.org/yashprit/git-remote-create.svg?branch=master
-[daviddm-url]: https://david-dm.org/yashprit/git-remote-create.svg?theme=shields.io
-[daviddm-image]: https://david-dm.org/yashprit/git-remote-create
