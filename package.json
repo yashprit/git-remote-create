@@ -2,44 +2,45 @@
   "name": "git-remote-create",
   "version": "0.0.0-alpha",
   "description": "create remote github repository, using node",
-   "homepage": "http://yashprit.github.io",
-    
-    "bugs": {
-      "url": "yashprit/git-remote-create/issues"
+  "homepage": "http://yashprit.github.io",
+  "bugs": {
+    "url": "yashprit/git-remote-create/issues"
   },
-  "author": {  "url": "yashprit.github.io"  ,  "name": "Yashprit"  ,  "email": "yashprit@gmail.com" 
+  "author": {
+    "url": "yashprit.github.io",
+    "name": "Yashprit",
+    "email": "yashprit@gmail.com"
   },
   "repository": {
     "type": "git",
     "url": "yashprit/git-remote-create"
   },
   "license": "MIT",
-  "files": [ 
-        "index.js"   ,
-        "cli.js" 
+  "files": [
+    "index.js",
+    "cli.js"
   ],
   "keywords": [
-    "git-remote-create"  ,
-        "remote"  ,
-        "repo"  ,
-        "cli"  ,
-        "create"  ,
-        "github" 
+    "git-remote-create",
+    "remote",
+    "repo",
+    "cli",
+    "create",
+    "github"
   ],
-  "dependencies": { 
-        "minimist": "^1.1.1" 
+  "dependencies": {
+    "got": "^2.5.0",
+    "minimist": "^1.1.1",
+    "request": "^2.54.0"
   },
-  "devDependencies": { 
-        "mocha": "*" 
-       ,
-      "jshint-stylish": "^1.0.0" 
+  "devDependencies": {
+    "mocha": "*",
+    "jshint-stylish": "^1.0.0"
   },
-  "scripts": { 
-      
-      
-       "test": "mocha" 
-  }  ,
-      "bin": {
-        "git-remote-create": "cli.js"
-    } 
+  "scripts": {
+    "test": "mocha"
+  },
+  "bin": {
+    "git-remote-create": "cli.js"
+  }
 }
