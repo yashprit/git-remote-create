@@ -1,6 +1,6 @@
 {
   "name": "git-remote-create",
-  "version": "0.0.0-alpha",
+  "version": "0.0.0-beta",
   "description": "create remote github repository, using node",
   "homepage": "http://yashprit.github.io",
   "bugs": {
