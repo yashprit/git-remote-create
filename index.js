@@ -27,9 +27,9 @@ function createRepo(token, reponame, cb) {
     }
 
     if (!err && response.statusCode == 201) {
-      cb(null, data);
+      cb(null, body);
     } else {
-      cb(err);
+      cb(body.message);
     }
   });
 }
