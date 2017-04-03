@@ -1,6 +1,6 @@
 {
   "name": "git-remote-create",
-  "version": "0.0.0-beta",
+  "version": "0.1.0",
   "description": "create remote github repository, using node",
   "homepage": "http://yashprit.github.io",
   "bugs": {
@@ -29,11 +29,11 @@
     "github"
   ],
   "dependencies": {
-    "minimist": "^1.1.1",
-    "request": "^2.54.0"
+    "minimist": "^1.2.0",
+    "request": "^2.81.0"
   },
   "devDependencies": {
-    "mocha": "*"
+    "mocha": "^3.2.0"
   },
   "scripts": {
     "test": "mocha"

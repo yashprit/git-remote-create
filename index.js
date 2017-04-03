@@ -1,6 +1,5 @@
 'use strict';
 var request = require('request');
-var querystring = require('querystring');
 
 function createRepo(token, reponame, cb) {
 
@@ -21,12 +20,9 @@ function createRepo(token, reponame, cb) {
   };
 
   request(options, function(err, response, body) {
-    if (err) {
-      cb(err);
-      return;
-    }
+    if (err) return cb(err);
 
-    if (!err && response.statusCode == 201) {
+    if (response && response.statusCode == 201) {
       cb(null, body);
     } else {
       cb(body.message);
